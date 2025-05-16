@@ -5,8 +5,8 @@ gpt-review:
   stage: review
   image: "node:18.17"
   before_script:
-    - npm install -g shippie
+    - npm install -g FlavAI
   script:
-    - shippie review --ci=gitlab
+    - FlavAI review --ci=gitlab
   only:
     - merge_requests

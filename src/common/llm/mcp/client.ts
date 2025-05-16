@@ -30,15 +30,15 @@ export class MCPClientManager {
       const workspacePath = await getGitRoot()
       const config: MCPConfig = { mcpServers: {} }
 
-      // Try to load from .shippie/mcp.json
+      // Try to load from .FlavAI/mcp.json
       try {
-        const shippieConfigPath = join(workspacePath, '.shippie', 'mcp.json')
-        const shippieConfigContent = await readFile(shippieConfigPath, 'utf-8')
-        const shippieConfig = JSON.parse(shippieConfigContent) as MCPConfig
-        config.mcpServers = { ...config.mcpServers, ...shippieConfig.mcpServers }
-        logger.info('Loaded MCP config from .shippie/mcp.json')
+        const FlavAIConfigPath = join(workspacePath, '.FlavAI', 'mcp.json')
+        const FlavAIConfigContent = await readFile(FlavAIConfigPath, 'utf-8')
+        const FlavAIConfig = JSON.parse(FlavAIConfigContent) as MCPConfig
+        config.mcpServers = { ...config.mcpServers, ...FlavAIConfig.mcpServers }
+        logger.info('Loaded MCP config from .FlavAI/mcp.json')
       } catch (error) {
-        logger.debug(`No .shippie/mcp.json found or error reading it: ${error}`)
+        logger.debug(`No .FlavAI/mcp.json found or error reading it: ${error}`)
       }
 
       // Try to load from .cursor/mcp.json
@@ -55,7 +55,7 @@ export class MCPClientManager {
       // If no configs were found, set config to null
       if (Object.keys(config.mcpServers).length === 0) {
         logger.error(
-          'No MCP configuration found in .shippie/mcp.json or .cursor/mcp.json'
+          'No MCP configuration found in .FlavAI/mcp.json or .cursor/mcp.json'
         )
         this.config = null
         return

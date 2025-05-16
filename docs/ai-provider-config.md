@@ -1,13 +1,13 @@
 # Provider Configuration
 
-Shippie support OpenAI, Anthropic, Google Gemini and local models through an OpenAI compatible API.
+FlavAI support OpenAI, Anthropic, Google Gemini and local models through an OpenAI compatible API.
 
 Just change the `modelString` to the model you want to use.
 
 eg.
 
 ```yaml
-- name: Run shippie review
+- name: Run FlavAI review
   run: bun review --platform=github --modelString=azure:gpt-4o
 ```
 
@@ -25,7 +25,7 @@ Before you begin, make sure you have the following:
 To set up the code review script with the Azure OpenAI provider on GitHub CI, add the following configuration in your GitHub Actions workflow file (e.g., .github/workflows/review.yml):
 
 ```yaml
-- name: Run shippie review
+- name: Run FlavAI review
   run: bun review --platform=github --modelString=azure:gpt-4o
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

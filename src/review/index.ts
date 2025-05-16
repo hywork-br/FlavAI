@@ -25,7 +25,7 @@ export const review = async (yargs: ReviewArgs): Promise<void> => {
 
   if (yargs.telemetry) {
     logger.info(
-      'Shippie collects anonymous usage data to help improve the product. You can opt out by setting --telemetry false when running Shippie.'
+      'FlavAI collects anonymous usage data to help improve the product. You can opt out by setting --telemetry false when running FlavAI.'
     )
     const telemetry = new Telemetry(yargs, platformProvider)
     telemetry.startReview()

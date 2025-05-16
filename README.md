@@ -1,4 +1,4 @@
-# Shippie 🚢 (formerly Code Review GPT)
+# FlavAI 🚢 (formerly Code Review GPT)
 
 [![NPM][npm_badge]][npm]
 [![Contributors][contributors_badge]][contributors]
@@ -8,7 +8,7 @@
 
 ## Helps you ship faster
 
-Shippie uses Large Language Models to review code in your CI/CD pipeline. It should pick up on common issues such as:
+FlavAI uses Large Language Models to review code in your CI/CD pipeline. It should pick up on common issues such as:
 
 - Exposed secrets
 - Slow or inefficient code
@@ -17,12 +17,12 @@ Shippie uses Large Language Models to review code in your CI/CD pipeline. It sho
 It can also be run locally in your command line to review staged files.
 
 ```bash
-npx shippie review
+npx FlavAI review
 ```
 
 ## Demo
 
-https://github.com/mattzcarey/shippie/assets/77928207/92029baf-f691-465f-8d15-e1363fcb808e
+https://github.com/mattzcarey/FlavAI/assets/77928207/92029baf-f691-465f-8d15-e1363fcb808e
 
 ## Ethos 💭
 
@@ -33,15 +33,15 @@ https://github.com/mattzcarey/shippie/assets/77928207/92029baf-f691-465f-8d15-e1
 
 ## Setup Instructions 💫
 
-See the [setup instructions](docs/setup.md) for more docs on how to set up shippie in your CI/CD pipeline and use it locally.
+See the [setup instructions](docs/setup.md) for more docs on how to set up FlavAI in your CI/CD pipeline and use it locally.
 
 ## Development 🔧
 
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/mattzcarey/shippie.git
-   cd shippie
+   git clone https://github.com/mattzcarey/FlavAI.git
+   cd FlavAI
    ```
 
 2. Install dependencies (we use bun but you can use npm or pnpm if you prefer):
@@ -74,37 +74,37 @@ We use [release-please](https://github.com/googleapis/release-please) on this pr
 
 Thanks to our wonderful contributors!
 
-<a href="https://github.com/mattzcarey/shippie/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mattzcarey/shippie" />
+<a href="https://github.com/mattzcarey/FlavAI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mattzcarey/FlavAI" />
 </a>
 
 ## Roadmap 🌏
 
-Have a look at the [discussion tab](https://github.com/mattzcarey/shippie/discussions) for the latest chat and ideas. I am actively working on the items in [todo.md](todo.md).
+Have a look at the [discussion tab](https://github.com/mattzcarey/FlavAI/discussions) for the latest chat and ideas. I am actively working on the items in [todo.md](todo.md).
 
 ## Sponsors ❤️
 
 <a href="https://www.quivr.app/">
-    <img src="https://github.com/mattzcarey/shippie/assets/77928207/30361248-3159-4535-8efb-b114989ae886" alt="quivr logo" width="150" height="150">
+    <img src="https://github.com/mattzcarey/FlavAI/assets/77928207/30361248-3159-4535-8efb-b114989ae886" alt="quivr logo" width="150" height="150">
 </a>
 
 <a href="https://www.aleios.com/">
-    <img src="https://github.com/mattzcarey/shippie/assets/77928207/a47c2460-b866-433f-a4c9-efb5737d4fed" alt="aleios logo" width="150" height="150">
+    <img src="https://github.com/mattzcarey/FlavAI/assets/77928207/a47c2460-b866-433f-a4c9-efb5737d4fed" alt="aleios logo" width="150" height="150">
 </a>
 
 ## Star History ⭐️
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mattzcarey/shippie&type=Date)](https://star-history.com/#mattzcarey/shippie&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mattzcarey/FlavAI&type=Date)](https://star-history.com/#mattzcarey/FlavAI&Date)
 
 <!-- Badges -->
 
-[npm]: https://www.npmjs.com/package/shippie
-[npm_badge]: https://img.shields.io/npm/dm/shippie.svg
+[npm]: https://www.npmjs.com/package/FlavAI
+[npm_badge]: https://img.shields.io/npm/dm/FlavAI.svg
 [license]: https://opensource.org/licenses/MIT
-[license_badge]: https://img.shields.io/github/license/mattzcarey/shippie.svg?color=blue&style=flat-square&ghcache=unused
-[contributors]: https://github.com/mattzcarey/shippie/graphs/contributors
-[contributors_badge]: https://img.shields.io/github/contributors/mattzcarey/shippie
-[pulse]: https://github.com/mattzcarey/shippie/pulse
-[pulse_badge]: https://img.shields.io/github/commit-activity/m/mattzcarey/shippie
+[license_badge]: https://img.shields.io/github/license/mattzcarey/FlavAI.svg?color=blue&style=flat-square&ghcache=unused
+[contributors]: https://github.com/mattzcarey/FlavAI/graphs/contributors
+[contributors_badge]: https://img.shields.io/github/contributors/mattzcarey/FlavAI
+[pulse]: https://github.com/mattzcarey/FlavAI/pulse
+[pulse_badge]: https://img.shields.io/github/commit-activity/m/mattzcarey/FlavAI
 [twitter]: https://twitter.com/intent/follow?screen_name=mattzcarey
 [twitter_badge]: https://img.shields.io/twitter/follow/mattzcarey?style=social&logo=twitter

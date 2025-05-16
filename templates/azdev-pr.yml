@@ -1,10 +1,10 @@
-name: Shippie 🚢
+name: FlavAI 🚢
 trigger:
   - main
 pr:
   - main
 
-# Important: shippie needs additional Git history available for affected to function correctly. 
+# Important: FlavAI needs additional Git history available for affected to function correctly. 
 # Make sure Shallow fetching is disabled in your pipeline settings UI. 
 # For more info, check out this article from Microsoft https://learn.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/steps-checkout?view=azure-pipelines#shallow-fetch.
 variables:
@@ -15,22 +15,22 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  - stage: Shippie
+  - stage: FlavAI
     jobs:
-      - job: shippie_review
-        displayName: Shippie
+      - job: FlavAI_review
+        displayName: FlavAI
         workspace:
           clean: all
         steps:
           - script: |
-              npm install shippie
-            displayName: "Install shippie"  
+              npm install FlavAI
+            displayName: "Install FlavAI"  
           
           - script: |
-              npx shippie review --platform=azdev
+              npx FlavAI review --platform=azdev
             env:
               API_TOKEN: $(API_TOKEN)
               OPENAI_API_KEY: $(OPENAI_API_KEY)
               BASE_SHA: $(BASE_SHA)
             workingDirectory: $(Build.SourcesDirectory)
-            displayName: "Run shippie review"
+            displayName: "Run FlavAI review"

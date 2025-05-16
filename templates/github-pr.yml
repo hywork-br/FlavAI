@@ -1,4 +1,4 @@
-name: Shippie 🚢
+name: FlavAI 🚢
 
 on:
   pull_request:
@@ -22,11 +22,11 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Install shippie
-        run: bun i shippie
+      - name: Install FlavAI
+        run: bun i FlavAI
 
-      - name: Run shippie review
-        run: bun shippie review --platform=github
+      - name: Run FlavAI review
+        run: bun FlavAI review --platform=github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASE_SHA: ${{ github.event.pull_request.base.sha }}

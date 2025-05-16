@@ -10,7 +10,7 @@ enum EventType {
 }
 
 export class Telemetry {
-  url = 'https://telemetry.shippie.dev/events'
+  url = 'https://telemetry.FlavAI.dev/events'
   run_id: string
   repo_id: string
   args: ParsedArgs
@@ -33,7 +33,7 @@ export class Telemetry {
         platform: process.platform,
         arch: process.arch,
         node_version: process.version,
-        shippie_version: packageJson.version,
+        FlavAI_version: packageJson.version,
       },
     }
 

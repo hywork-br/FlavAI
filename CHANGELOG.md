@@ -1,56 +1,56 @@
 # Changelog
 
-## [0.14.0](https://github.com/mattzcarey/shippie/compare/v0.13.0...v0.14.0) (2025-05-12)
+## [0.14.0](https://github.com/mattzcarey/FlavAI/compare/v0.13.0...v0.14.0) (2025-05-12)
 
 
 ### Features
 
-* **cli:** move to tsup ([#421](https://github.com/mattzcarey/shippie/issues/421)) ([4a55214](https://github.com/mattzcarey/shippie/commit/4a55214e95a4017975736d67dd6732046ef0d648))
+* **cli:** move to tsup ([#421](https://github.com/mattzcarey/FlavAI/issues/421)) ([4a55214](https://github.com/mattzcarey/FlavAI/commit/4a55214e95a4017975736d67dd6732046ef0d648))
 
-## [0.13.0](https://github.com/mattzcarey/shippie/compare/v0.12.2...v0.13.0) (2025-05-12)
+## [0.13.0](https://github.com/mattzcarey/FlavAI/compare/v0.12.2...v0.13.0) (2025-05-12)
 
 
 ### Features
 
-* some basic telemetry data ([#416](https://github.com/mattzcarey/shippie/issues/416)) ([10676a8](https://github.com/mattzcarey/shippie/commit/10676a877e92addccdd59ca676027d506a8cef74))
-* thinking tool ([#418](https://github.com/mattzcarey/shippie/issues/418)) ([8aa4a5e](https://github.com/mattzcarey/shippie/commit/8aa4a5eb40a892c95a5bddc92c3210565369afc9))
-* **tools:** mcp client and client manager ([#419](https://github.com/mattzcarey/shippie/issues/419)) ([3ad39b2](https://github.com/mattzcarey/shippie/commit/3ad39b26f7c26c040d6cf2dd55fa8c0e11d87671))
+* some basic telemetry data ([#416](https://github.com/mattzcarey/FlavAI/issues/416)) ([10676a8](https://github.com/mattzcarey/FlavAI/commit/10676a877e92addccdd59ca676027d506a8cef74))
+* thinking tool ([#418](https://github.com/mattzcarey/FlavAI/issues/418)) ([8aa4a5e](https://github.com/mattzcarey/FlavAI/commit/8aa4a5eb40a892c95a5bddc92c3210565369afc9))
+* **tools:** mcp client and client manager ([#419](https://github.com/mattzcarey/FlavAI/issues/419)) ([3ad39b2](https://github.com/mattzcarey/FlavAI/commit/3ad39b26f7c26c040d6cf2dd55fa8c0e11d87671))
 
-## [0.12.2](https://github.com/mattzcarey/shippie/compare/v0.12.1...v0.12.2) (2025-05-12)
+## [0.12.2](https://github.com/mattzcarey/FlavAI/compare/v0.12.1...v0.12.2) (2025-05-12)
 
 
 ### Bug Fixes
 
-* **action:** add debug argument ([#411](https://github.com/mattzcarey/shippie/issues/411)) ([e24ed7f](https://github.com/mattzcarey/shippie/commit/e24ed7ff94cc0e56f752e02b2da35be14299257a))
+* **action:** add debug argument ([#411](https://github.com/mattzcarey/FlavAI/issues/411)) ([e24ed7f](https://github.com/mattzcarey/FlavAI/commit/e24ed7ff94cc0e56f752e02b2da35be14299257a))
 
-## [0.12.1](https://github.com/mattzcarey/shippie/compare/v0.12.0...v0.12.1) (2025-05-12)
+## [0.12.1](https://github.com/mattzcarey/FlavAI/compare/v0.12.0...v0.12.1) (2025-05-12)
 
 
 ### Bug Fixes
 
-* **cicd:** npm token ([#414](https://github.com/mattzcarey/shippie/issues/414)) ([a72f00d](https://github.com/mattzcarey/shippie/commit/a72f00d9dd630b541d511f20682cbdfe6f4f514b))
-* **review:** use node fs for readFile tool ([#412](https://github.com/mattzcarey/shippie/issues/412)) ([75f083f](https://github.com/mattzcarey/shippie/commit/75f083fd44952d22a046f00960cb66853c785561))
+* **cicd:** npm token ([#414](https://github.com/mattzcarey/FlavAI/issues/414)) ([a72f00d](https://github.com/mattzcarey/FlavAI/commit/a72f00d9dd630b541d511f20682cbdfe6f4f514b))
+* **review:** use node fs for readFile tool ([#412](https://github.com/mattzcarey/FlavAI/issues/412)) ([75f083f](https://github.com/mattzcarey/FlavAI/commit/75f083fd44952d22a046f00960cb66853c785561))
 
-## [0.12.0](https://github.com/mattzcarey/shippie/compare/v0.11.0...v0.12.0) (2025-04-30)
-
-
-### Features
-
-* azure ai provider ([#409](https://github.com/mattzcarey/shippie/issues/409)) ([69e9d43](https://github.com/mattzcarey/shippie/commit/69e9d43310d54ea646740e73aa08b8d1076e4a73))
-
-## [0.11.0](https://github.com/mattzcarey/shippie/compare/v0.10.0...v0.11.0) (2025-04-29)
+## [0.12.0](https://github.com/mattzcarey/FlavAI/compare/v0.11.0...v0.12.0) (2025-04-30)
 
 
 ### Features
 
-* add usage stats ([#407](https://github.com/mattzcarey/shippie/issues/407)) ([f075aa9](https://github.com/mattzcarey/shippie/commit/f075aa9a818b9b99388c1fb8cb344159487a0f29))
+* azure ai provider ([#409](https://github.com/mattzcarey/FlavAI/issues/409)) ([69e9d43](https://github.com/mattzcarey/FlavAI/commit/69e9d43310d54ea646740e73aa08b8d1076e4a73))
 
-## [0.10.0](https://github.com/mattzcarey/shippie/compare/v0.9.0...v0.10.0) (2025-04-28)
+## [0.11.0](https://github.com/mattzcarey/FlavAI/compare/v0.10.0...v0.11.0) (2025-04-29)
 
 
 ### Features
 
-* rename to shippie ([#405](https://github.com/mattzcarey/shippie/issues/405)) ([5abf3f2](https://github.com/mattzcarey/shippie/commit/5abf3f234319fdb7edfabacd1166bd8bd1ae2b09))
+* add usage stats ([#407](https://github.com/mattzcarey/FlavAI/issues/407)) ([f075aa9](https://github.com/mattzcarey/FlavAI/commit/f075aa9a818b9b99388c1fb8cb344159487a0f29))
+
+## [0.10.0](https://github.com/mattzcarey/FlavAI/compare/v0.9.0...v0.10.0) (2025-04-28)
+
+
+### Features
+
+* rename to FlavAI ([#405](https://github.com/mattzcarey/FlavAI/issues/405)) ([5abf3f2](https://github.com/mattzcarey/FlavAI/commit/5abf3f234319fdb7edfabacd1166bd8bd1ae2b09))
 
 ## [0.9.0](https://github.com/mattzcarey/code-review-gpt/compare/v0.8.0...v0.9.0) (2025-04-28)
 

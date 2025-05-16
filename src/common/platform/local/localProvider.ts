@@ -10,21 +10,21 @@ import { PlatformOptions } from '../../types'
 import { logger } from '../../utils/logger'
 import type { PlatformProvider, ReviewComment, ThreadComment } from '../provider'
 
-const SHIPPIE_DIR_NAME = '.shippie'
-const SHIPPIE_CONFIG_DIR = join(homedir(), SHIPPIE_DIR_NAME)
-const REPO_IDS_FILE = join(SHIPPIE_CONFIG_DIR, 'repo_ids.json')
+const FlavAI_DIR_NAME = '.FlavAI'
+const FlavAI_CONFIG_DIR = join(homedir(), FlavAI_DIR_NAME)
+const REPO_IDS_FILE = join(FlavAI_CONFIG_DIR, 'repo_ids.json')
 
 export const localProvider = async (): Promise<PlatformProvider> => {
   const workspaceRoot = await getGitRoot()
 
   const timestamp = new Date().toISOString().replace(/:/g, '-')
   const reviewFileName = `local_${timestamp}.md`
-  const shippieDirPath = join(workspaceRoot, SHIPPIE_DIR_NAME)
-  const reviewDirPath = join(shippieDirPath, 'review')
+  const FlavAIDirPath = join(workspaceRoot, FlavAI_DIR_NAME)
+  const reviewDirPath = join(FlavAIDirPath, 'review')
   const reviewFilePath = join(reviewDirPath, reviewFileName)
   const gitignorePath = join(reviewDirPath, '.gitignore')
 
-  const ensureShippieDirExists = async (): Promise<void> => {
+  const ensureFlavAIDirExists = async (): Promise<void> => {
     try {
       await mkdir(reviewDirPath, { recursive: true })
 
@@ -51,7 +51,7 @@ export const localProvider = async (): Promise<PlatformProvider> => {
   }
 
   const appendToFile = async (content: string): Promise<void> => {
-    await ensureShippieDirExists()
+    await ensureFlavAIDirExists()
 
     try {
       await appendFile(reviewFilePath, content + EOL)
@@ -66,7 +66,7 @@ export const localProvider = async (): Promise<PlatformProvider> => {
     repoHash: string
   ): Promise<void> => {
     try {
-      await mkdir(SHIPPIE_CONFIG_DIR, { recursive: true })
+      await mkdir(FlavAI_CONFIG_DIR, { recursive: true })
 
       try {
         const content = await readFile(REPO_IDS_FILE, 'utf-8')
