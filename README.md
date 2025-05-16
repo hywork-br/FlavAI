@@ -16,6 +16,8 @@ Shippie uses Large Language Models to review code in your CI/CD pipeline. It sho
 
 It can also be run locally in your command line to review staged files.
 
+Altomatizei a leitura e validação de PR via AI para a Hywork. 
+
 ```bash
 npx shippie review
 ```
