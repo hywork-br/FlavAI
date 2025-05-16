@@ -1,6 +1,6 @@
 {
     "name": "FlavAI",
-    "version": "0.14.0",
+    "version": "1.0.0",
     "description": "an extensible code review agent",
     "bin": {
         "FlavAI": "./dist/index.js"
