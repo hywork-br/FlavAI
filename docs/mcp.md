@@ -1,14 +1,14 @@
 # Model Context Protocol (MCP) Configuration
 
-FlavAI can debug failures in obscure browsers, perform QA testing, understand the original goal of the ticket and generally do all the things a human would do using external tools supplied via MCP servers.
+Shippie can debug failures in obscure browsers, perform QA testing, understand the original goal of the ticket and generally do all the things a human would do using external tools supplied via MCP servers.
 
-You can give the FlavAI agent access to a web browser, database, documentation, project management systems or any other external tools.
+You can give the shippie agent access to a web browser, database, documentation, project management systems or any other external tools.
 
-FlavAI acts as an MCP client, like Cursor, Windsurf, VSCode and Claude.
+Shippie acts as an MCP client, like Cursor, Windsurf, VSCode and Claude.
 
 ## Configuration File
 
-MCP servers are configured using a JSON configuration file using the `.FlavAI/mcp.json` or `.cursor/mcp.json` file. This file defines the MCP servers available to the FlavAI agent.
+MCP servers are configured using a JSON configuration file using the `.shippie/mcp.json` or `.cursor/mcp.json` file. This file defines the MCP servers available to the shippie agent.
 
 See the [Cursor MCP documentation](https://docs.cursor.com/context/model-context-protocol).
 

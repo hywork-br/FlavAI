@@ -1,12 +1,13 @@
-name: FlavAI 🚢
+name: Shippie 🚢
 
 on:
   pull_request:
     branches: [main]
 
 permissions:
+  contents: write
   pull-requests: write
-  contents: read
+  issues: write
 
 jobs:
   build:
@@ -22,11 +23,11 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Install FlavAI
-        run: bun i FlavAI
+      - name: Install shippie
+        run: bun i shippie
 
-      - name: Run FlavAI review
-        run: bun FlavAI review --platform=github
+      - name: Run shippie review
+        run: bun shippie review --platform=github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASE_SHA: ${{ github.event.pull_request.base.sha }}

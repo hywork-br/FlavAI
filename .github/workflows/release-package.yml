@@ -48,5 +48,5 @@ jobs:
       - name: 🏡 Build package
         run: bun run build
 
-      - name: 🚀 Publish FlavAI
+      - name: 🚀 Publish shippie
         run: npm publish --access public

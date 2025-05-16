@@ -1,4 +1,4 @@
-name: "FlavAI 🚢"
+name: "Shippie 🚢"
 description: "an extensible code review agent"
 author: "Matt Carey"
 inputs:
@@ -38,11 +38,11 @@ runs:
       with:
         bun-version: latest
 
-    - name: Install and Run FlavAI 🚢
+    - name: Install and Run Shippie 🚢
       shell: bash
       run: |
-        bun add FlavAI@latest
-        bun FlavAI --debug=$DEBUG review --platform=github --modelString=$MODEL_STRING --reviewLanguage=$REVIEW_LANGUAGE --maxSteps=$MAX_STEPS --baseUrl=$BASE_URL --telemetry=$TELEMETRY
+        bun add shippie@latest
+        bun shippie --debug=$DEBUG review --platform=github --modelString=$MODEL_STRING --reviewLanguage=$REVIEW_LANGUAGE --maxSteps=$MAX_STEPS --baseUrl=$BASE_URL --telemetry=$TELEMETRY
       env:
         MODEL_STRING: ${{ inputs.MODEL_STRING }}
         REVIEW_LANGUAGE: ${{ inputs.REVIEW_LANGUAGE }}

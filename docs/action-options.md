@@ -1,11 +1,11 @@
-# FlavAI CI/CD 
+# Shippie CI/CD
 
 ### Option 1: Review every PR to main
 
 Trigger a code review on any PR into main, updating it each time you push changes.
 
 ```yaml
-name: FlavAI 🚢
+name: Shippie 🚢
 
 on:
   pull_request:
@@ -19,15 +19,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: FlavAI 🚢
-        uses: mattzcarey/FlavAI@v0.10.0
+      - name: Shippie 🚢
+        uses: mattzcarey/shippie@v0.10.0
         with:
           GITHUB_TOKEN: ${{ github.token }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MODEL_STRING: "openai:gpt-4o"
 ```
 
-### Option 2: Assign a FlavAI bot
+### Option 2: Assign a shippie bot
 
 In this config, a review is triggered when a specific user is added as a "reviewer" in the Github UI. Create an additional Github account such as 'YourProject-ML-CR-bot', then specify the account username in the config.
 
@@ -36,7 +36,7 @@ This option can save on API costs by only reviewing when explicity asked to. It 
 To trigger a re-review, simply remove and re-add the bot to the reviewers list.
 
 ```yaml
-name: FlavAI 🚢
+name: Shippie 🚢
 
 on:
   pull_request:

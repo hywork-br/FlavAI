@@ -1,13 +1,13 @@
 # Provider Configuration
 
-FlavAI support OpenAI, Anthropic, Google Gemini and local models through an OpenAI compatible API.
+Shippie support OpenAI, Anthropic, Google Gemini and local models through an OpenAI compatible API.
 
 Just change the `modelString` to the model you want to use.
 
 eg.
 
 ```yaml
-- name: Run FlavAI review
+- name: Run shippie review
   run: bun review --platform=github --modelString=azure:gpt-4o
 ```
 
@@ -25,7 +25,7 @@ Before you begin, make sure you have the following:
 To set up the code review script with the Azure OpenAI provider on GitHub CI, add the following configuration in your GitHub Actions workflow file (e.g., .github/workflows/review.yml):
 
 ```yaml
-- name: Run FlavAI review
+- name: Run shippie review
   run: bun review --platform=github --modelString=azure:gpt-4o
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -47,4 +47,4 @@ AZURE_OPENAI_API_VERSION: Specifies the API version you're using, supporting fut
 
 - Invalid API Keys: Double-check your secrets to ensure that they are accurate and up-to-date.
 - Deployment Issues: Verify that the deployment names and instance names are correctly stated and match those in your Azure set up.
-- `400 Invalid parameter: 'response_format' of type 'json_schema' is not supported with this model` ensure that you're using a model that supports [Structured Outputs](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs) 
+- `400 Invalid parameter: 'response_format' of type 'json_schema' is not supported with this model` ensure that you're using a model that supports [Structured Outputs](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/structured-outputs)
